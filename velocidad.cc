@@ -9,16 +9,28 @@ using namespace std;
 
 int main (){
 	float V, D, T;
-	while (T!=0){
-	if (T!=0){
-	cout<<"Introduce valor de D"<<D<<endl;
+
+	//Tu programa no entra al while porque no le diste un valor inicial a la T. Sí lo que querías era validar que T fuera diferente de 0, solo necesitabas el if.  
+	//while (T!=0){
+	//if (T!=0){
+
+	// No tiene sentido imprimir el valor de D, porque es lo que estás pidiendo y de hecho no le has asignado ningún valor previo. El usuario, no sabe que es "D", tienes que indicarle que es la distancia. 
+	//cout<<"Introduce valor de D"<<D<<endl;
+        cout<<"Introduce valor de la distancia "<<endl;
 	cin>>D;
-	cout<<"Introduce valor de T"<<T<<endl;
+	// lo mismo pasa con tu variable T
+	//cout<<"Introduce valor de T"<<T<<endl;
+	cout<<"Introduce valor del tiempo "<<endl;
 	cin>>T;
-		V=D/T;	
+	if (T!=0){ 
+	  //te flataba imprimir el resultado, y de hecho tu variable V no es necesaria, porque no vuelves a usar V para nada. 
+	  cout << D/T << endl;	
 	}	
-	else if (T=0)
-		break;
-	}
+	else cout << "No existen las divisiones entre cero" <<endl;
+ 	  //¿Este if lo usabas para terminar el ciclo?
+	  //if (T=0)
+	  //estas líneas las comentamos porque no usamos el while
+	  //	break;
+	  //}
 }
 	

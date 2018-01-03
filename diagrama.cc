@@ -31,3 +31,5 @@ imprimiendo los siguientes valores
 el valor de x es 1
 el valor de x es 5
 */
+
+//La explicación dada es parcialmente correcta. De hecho el programa imprime x dentro del ciclo, no se espera a salir para imprimir.
